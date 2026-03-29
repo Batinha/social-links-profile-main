@@ -1,0 +1,89 @@
+@font-face {
+    font-family: Inter;
+    src: url(/assets/fonts/Inter-VariableFont_slnt\,wght.ttf);
+}
+* {
+    margin: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    align-items: center;
+    background-color: hsl(0, 0%, 8%);
+}
+
+.card {
+    background-color: hsl(0, 0%, 12%);
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 15px;
+    width: 90%;
+    max-width: 380px;
+}
+
+.card img{
+    border-radius: 200px;
+    padding: 40px;
+}
+
+.card p{
+    color: hsl(0, 0%, 100%);
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.card p:nth-child(3){
+    color: hsl(75, 94%, 57%);
+    font-size: 14px;
+    margin: 10px 0px 30px 0px;
+}
+
+.card p:nth-child(4){
+    font-size: 14px;
+    font-weight: 200;
+    padding-bottom: 30px;
+}
+
+.card .buttons{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 0px 40px 40px 40px;
+    width: 80%;
+}
+
+.card .buttons p{
+    font-family: 'Inter';
+    font-size: 14px;
+    padding: 15px;
+}
+
+.card .buttons button{
+    border-radius: 10px;
+    border: none;
+    background-color: hsl(0, 0%, 20%);
+}
+
+.card .buttons button:hover{
+    cursor: pointer;
+    background-color: hsl(75, 94%, 57%);
+}
+
+.card .buttons button:hover p{
+    color: hsl(0, 0%, 12%);
+}
+
+.card .buttons button:focus{
+    background-color: hsl(75, 94%, 57%);
+}
+
+.card .buttons button:focus p{                  
+    color: hsl(0, 0%, 12%);
+}
